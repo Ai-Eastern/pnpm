@@ -69,13 +69,13 @@ pub(crate) use local_file_deps::{
     has_local_file_dep_requiring_install, has_local_file_override, has_local_file_package_extension,
 };
 pub(crate) use manifest_agreement::{
-    ManifestStat, materialized_shape_matches, modified_manifests_match_lockfile, stat_manifests,
-    unstatted_manifests,
+    ManifestStat, modified_manifests_match_lockfile, stat_manifests, unstatted_manifests,
 };
 pub(crate) use settings::{
     catalogs_cache_matches, current_settings_with_catalogs, first_setting_drift,
     recorded_supported_architectures_match, settings_match,
 };
+pub(crate) use settle::materialized_shape_matches;
 pub(crate) use timestamps::{
     FileMtime, file_mtime, file_mtime_from_metadata, filesystem_now_ms, lockfile_modified_since,
     manifest_drift_reference_ms, modified_at_or_after, mtime_ms, refreshed_validation_baseline_ms,
